@@ -1,0 +1,100 @@
+.bootstrap-grid .row > * {
+  height: 100px;
+  border: 1px solid var(--white); /*consider removing this*/
+  padding: 1px; /*consider removing this*/
+  /* border-color: var(--purple); */
+}
+
+  :root {
+    --white: #ffffff;
+    --gray1: #333333;
+    --purple: #800080;
+    --textWhite: #F3EFF5;
+    --bladBackground: #0D0A0B;
+    --greyAlt: #454955;
+  }
+  
+  .flex-item {
+    width: 160px;
+    height: 80px;
+    margin: 1px;
+  }
+  
+.navbar{
+    background-color: var(--bladBackground);
+    height: 10%;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color: var(--textWhite);
+    background-color: transparent;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:  var(--greyAlt);
+}
+.nav-link:active{
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+.navbar-brand{
+    color: var(--textWhite);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left:20%;
+    margin-right: 20%;
+    text-align: left;
+}
+.navbar-brand:hover{
+    color: var(--greyAlt); 
+}
+
+.jumbotron{
+    height: 700px;
+    background-image: url('../images/IMG_3985.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumboText{
+  
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    margin: 0;
+    font-size: 40px;
+    text-shadow: 3px 3px rgb(34, 85, 54);
+}
+.jumboText1{
+    margin: 0;
+    font-size: 30px;
+    text-shadow: 3px 3px rgb(34, 85, 54);
+}
+.line{
+    width: 75%;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+.introTitleText{
+    font-size: 30px;
+    margin: 0;
+}
+
+.introTextRow
+{
+    word-wrap: normal;
+}
+
+.introText
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+    margin: 0;
+    text-align: left;
+}
+
