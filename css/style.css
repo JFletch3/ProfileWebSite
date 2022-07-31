@@ -81,6 +81,7 @@
     font-size: 30px;
     text-shadow: 3px 3px rgb(34, 85, 54);
 }
+
 .line{
     width: 75%;
     border-bottom: 1px solid black;
@@ -124,5 +125,18 @@
 .workInfo{
     padding-left: 10%;
     padding-right: 5%;
+    text-align: left;
+}
+
+.ProjectHeaderText{
+    color: var(--greyAlt);
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+.projectDescription{
+    padding-left: 25%;
+    padding-right: 25%;
+
     text-align: left;
 }
