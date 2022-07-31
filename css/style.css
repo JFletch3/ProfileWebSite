@@ -1,7 +1,5 @@
 .bootstrap-grid .row > * {
   height: 700px;
-  border: 1px solid var(--white); /*consider removing this*/
-  padding: 1px; /*consider removing this*/
   /* border-color: var(--purple); */
 }
 
@@ -137,6 +135,40 @@
 .projectDescription{
     padding-left: 25%;
     padding-right: 25%;
-
     text-align: left;
+}
+
+.contactHeader{
+    color: var(--greyAlt);
+    font-size: 25px;
+    padding-top: 2%;
+}
+
+.contactRow{
+    background-color: #454955;
+}
+
+.contactText{
+    color: var(--textWhite);
+}
+
+.form-group{
+    padding-top: 1%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.btn-primary{
+    margin-top: 3%;
+    width:10%;
+    background-color: #3F7D20;
+    border-color: #72B01D;
+}
+.btn-primary:hover{
+    background-color: #72B01D;
+    border-color: #3F7D20;
+}
+.btn-primary::selection{
+    background-color: black;
+    border-color: black;
 }
