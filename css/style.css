@@ -1,8 +1,5 @@
 .bootstrap-grid .row > * {
   height: 700px;
-  border: 1px solid var(--white); /*consider removing this*/
-  padding: 1px; /*consider removing this*/
-  /* border-color: var(--purple); */
 }
 
 .introRow {
@@ -10,9 +7,6 @@
 }
 
 :root {
-  --white: #ffffff;
-  --gray1: #333333;
-  --purple: #800080;
   --textWhite: #f3eff5;
   --bladBackground: #0d0a0b;
   --greyAlt: #454955;
@@ -92,8 +86,8 @@
   font-size: 30px;
   margin: 0;
 }
-.joePic{
-    margin: auto;
+.joePic {
+  margin: auto;
 }
 .introText {
   padding-left: 2%;
@@ -175,76 +169,47 @@
   border-color: black;
 }
 
-@media (max-width:1200px)
-{
+@media (max-width: 1200px) {
+  .introText {
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+  }
 
-    .introText{
-        padding-top: 10%;
-        padding-left: 15%;
-        padding-right: 15%;
-        font-size: 17px;
-        margin: 0;
-        text-align: center;
-    }
+  .workExpTitle {
+    font-size: 25px;
+    padding-top: 1%;
+  }
 
-    .workExpTitle {
-        font-size: 25px;
-        padding-top: 1%;
-      }
-      
-      .workInfo {
-        text-align: left;
-      }
-
+  .workInfo {
+    text-align: left;
+  }
 }
 
-
-@media (max-width:595px)
-{
-    .introText{
-        padding-top: 3%;
-        padding-left: 3%;
-        padding-right: 3%;
-        font-size: 17px;
-        margin: 0;
-        text-align: center;
-    }
+@media (max-width: 595px) {
+  .introText {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+  }
 }
 
-@media (max-width:777px)
-{
-    .navbar-brand {
-        margin-left: 5%;
-        margin-right: 15%;
-      }
+@media (max-width: 777px) {
+  .navbar-brand {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
 }
 
-@media (max-width:486px)
-{
-    .navbar-brand {
-        margin-left: 0;
-        margin-right: 0;
-      }
+@media (max-width: 486px) {
+  .navbar-brand {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-
-/* 
-@media (min-width:993px)
-{
-    .grid-container-2{
-        height: 77vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: 
-        'header header header'
-        'jumbotron jumbotron jumbotron'
-        'jumbotron jumbotron jumbotron'
-        'card1 card2 card3'
-        'card1 card2 card3'
-        'section section section'
-        'section section section'
-        'footer footer footer';
-    }
-    .grid-container-2 .item5{
-        visibility:visible;
-    }
-} */

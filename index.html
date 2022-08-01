@@ -62,9 +62,15 @@
         </div>
         <div class="row text-center introTextRow">
           <div class="col-12 col-xl-6 d-none d-sm-block d-sm-none d-md-block">
-            <img class="joePic" src="./images/joe2.jpg" alt="test" width="500" height="650" />
+            <img
+              class="joePic"
+              src="./images/joe2.jpg"
+              alt="test"
+              width="500"
+              height="650"
+            />
           </div>
-          <div class="col-12 col-xl-6 ">
+          <div class="col-12 col-xl-6">
             <p class="introText">
               I have worked in manufacturing environments for the last 18 years.
               I've held roles as CNC machine operators, technical quality
@@ -104,7 +110,7 @@
         <div class="row text-center">
           <div class="col-12 col-xl-4">
             <img
-              class ="workHistoryIMG"
+              class="workHistoryIMG"
               src="./images/ttmlogo.png"
               alt="apexLogo"
               width="200"
@@ -127,7 +133,7 @@
           </div>
           <div class="col-12 col-xl-4">
             <img
-              class ="workHistoryIMG"
+              class="workHistoryIMG"
               src="./images/apexlogo.png"
               alt="apexLogo"
               width="200"
@@ -136,18 +142,18 @@
             <p class="workExpTitle">- Manufacturing Engineer 2015-2018</p>
             <p class="workDetails">Apex Industries</p>
             <p class="workInfo">
-                At Apex is where I built my first large scale program using Python
-                and SQL to interface with the Microsoft SQL server. Here I
-                developed a mini ERP software that Engineers, Planning,
-                Manufacturing used to place product on hold for evaluation by the
-                Engineering team, review product documents such as blueprints and
-                specs, along with giving the operators the ability to see their
-                Work in Progress with real time updating.
+              At Apex is where I built my first large scale program using Python
+              and SQL to interface with the Microsoft SQL server. Here I
+              developed a mini ERP software that Engineers, Planning,
+              Manufacturing used to place product on hold for evaluation by the
+              Engineering team, review product documents such as blueprints and
+              specs, along with giving the operators the ability to see their
+              Work in Progress with real time updating.
             </p>
           </div>
           <div class="col-12 col-xl-4">
             <img
-              class ="workHistoryIMG"
+              class="workHistoryIMG"
               src="./images/ttmlogo.png"
               alt="apexLogo"
               width="200"
@@ -163,6 +169,7 @@
               and specifications new projects might have. I support multiple
               cross platform interface programs as well as develop new reports
               and updates to existing programs from the large Oracle code base.
+            </p>
           </div>
         </div>
         <div class="row text-center parallax transition2 mb-5">
@@ -215,43 +222,97 @@
         <div class="row text-center contactRow">
           <div class="col-12">
             <p class="contactHeader contactText" id="anchor-contact">Contact</p>
-            <form>
+            <form onsubmit="return check()">
               <div class="form-group">
-                <label class="form-label contactText" for="Name">Name</label>
+                <label class="form-label contactText" for="Name">Name*</label>
                 <input
                   type="text"
                   class="form-control"
                   id="Name"
                   placeholder="Enter Name"
-                />
+                  oninput="resetFields1()"
+                />/>
               </div>
               <div class="form-group">
                 <label class="form-label contactText" for="email"
-                  >Email address</label
+                  >Email Address*</label
                 >
                 <input
                   type="email"
                   class="form-control"
                   id="email"
                   placeholder="Enter email"
-                />
+                  oninput="resetFields2()"
+                />/>
               </div>
               <div class="form-group">
                 <label class="form-label contactText" for="message"
-                  >Message</label
+                  >Message*</label
                 >
                 <input
                   type="text"
                   class="form-control"
                   id="message"
                   placeholder="Enter Message"
+                  oninput="resetFields3()"
                 />
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="submitContactForm(event)"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
       </div>
     </main>
+    <script>
+      function submitContactForm(event) {
+        let name = document.getElementById("Name");
+        let email = document.getElementById("email");
+        let msg = document.getElementById("message");
+        let alt = 0;
+
+        if (name.value === "") {
+          event.preventDefault();
+          name.style.background = "lightcoral";
+          alt = 1;
+        }
+
+        if (email.value === "") {
+          event.preventDefault();
+          email.style.background = "lightcoral";
+          alt = 1;
+        }
+
+        if (msg.value === "") {
+          event.preventDefault();
+          msg.style.background = "lightcoral";
+          alt = 1;
+        }
+
+        if ((alt = 1)) {
+          alert("Please enter required data");
+        }
+      }
+
+      function resetFields1() {
+        let name = document.getElementById("Name");
+
+        name.style.background = "white";
+      }
+      function resetFields2() {
+        let email = document.getElementById("email");
+        email.style.background = "white";
+      }
+
+      function resetFields3() {
+        let msg = document.getElementById("message");
+        msg.style.background = "white";
+      }
+    </script>
   </body>
 </html>
