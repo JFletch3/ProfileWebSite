@@ -1,174 +1,250 @@
 .bootstrap-grid .row > * {
   height: 700px;
+  border: 1px solid var(--white); /*consider removing this*/
+  padding: 1px; /*consider removing this*/
   /* border-color: var(--purple); */
 }
 
-.introRow{
-    height: 100px;
+.introRow {
+  height: 100px;
 }
 
 :root {
-    --white: #ffffff;
-    --gray1: #333333;
-    --purple: #800080;
-    --textWhite: #F3EFF5;
-    --bladBackground: #0D0A0B;
-    --greyAlt: #454955;
-  }
-  
+  --white: #ffffff;
+  --gray1: #333333;
+  --purple: #800080;
+  --textWhite: #f3eff5;
+  --bladBackground: #0d0a0b;
+  --greyAlt: #454955;
+}
+
 .flex-item {
-    width: 160px;
-    height: 80px;
-    margin: 1px;
-  }
-  
-.navbar{
-    background-color: var(--bladBackground);
-    height: 10%;
-    justify-content: space-around;
+  width: 160px;
+  height: 80px;
+  margin: 1px;
 }
 
-.nav-link{
-    color: var(--textWhite);
-    background-color: transparent;
-    text-decoration: none;
-}
-.nav-link:hover{
-    color:  var(--greyAlt);
-}
-.nav-link:active{
-    color: black;
-    text-decoration: none;
-    outline: none;
-}
-.navbar-brand{
-    color: var(--textWhite);
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 40px;
-    margin-left:20%;
-    margin-right: 18%;
-    text-align: left;
-}
-.navbar-brand:hover{
-    color: var(--greyAlt); 
+.navbar {
+  background-color: var(--bladBackground);
+  height: 10%;
+  justify-content: space-around;
 }
 
-.jumbotron{
-    height: 700px;
-    background-image: url('../images/IMG_3985.jpg'); 
+.nav-link {
+  color: var(--textWhite);
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--greyAlt);
+}
+.nav-link:active {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+.navbar-brand {
+  color: var(--textWhite);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 20%;
+  margin-right: 18%;
+  text-align: left;
+}
+.navbar-brand:hover {
+  color: var(--greyAlt);
 }
 
-.parallax{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.jumbotron {
+  height: 700px;
+  background-image: url("../images/IMG_3985.jpg");
 }
 
-.jumboText{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    margin: 0;
-    font-size: 40px;
-    text-shadow: 3px 3px rgb(34, 85, 54);
-}
-.jumboText1{
-    margin: 0;
-    font-size: 30px;
-    text-shadow: 3px 3px rgb(34, 85, 54);
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.line{
-    width: 75%;
-    border-bottom: 1px solid black;
+.jumboText {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  margin: 0;
+  font-size: 40px;
+  text-shadow: 3px 3px rgb(34, 85, 54);
+}
+.jumboText1 {
+  margin: 0;
+  font-size: 30px;
+  text-shadow: 3px 3px rgb(34, 85, 54);
+}
+
+.line {
+  width: 75%;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+.introTitleText {
+  font-size: 30px;
+  margin: 0;
+}
+.joePic{
     margin: auto;
 }
-
-.introTitleText{
-    font-size: 30px;
-    margin: 0;
+.introText {
+  padding-left: 2%;
+  padding-right: 20%;
+  font-size: 17px;
+  margin: 0;
+  text-align: left;
 }
 
-.introText
+.transition1 {
+  background-image: url("../images/transition1.jpg");
+}
+.transition2 {
+  background-image: url("../images/transition2.jpg");
+}
+.carousel-control-next {
+  filter: invert(100%);
+}
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.workExpTitle {
+  color: var(--greyAlt);
+  font-size: 25px;
+  padding-top: 1%;
+}
+
+.workInfo {
+  padding-left: 10%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+.ProjectHeaderText {
+  color: var(--greyAlt);
+  font-size: 25px;
+  padding-top: 10%;
+}
+
+.projectDescription {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: left;
+}
+
+.contactHeader {
+  color: var(--greyAlt);
+  font-size: 25px;
+  padding-top: 2%;
+}
+
+.contactRow {
+  background-color: #454955;
+}
+
+.contactText {
+  color: var(--textWhite);
+}
+
+.form-group {
+  padding-top: 1%;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.btn-primary {
+  margin-top: 3%;
+  width: 10%;
+  background-color: #3f7d20;
+  border-color: #72b01d;
+}
+.btn-primary:hover {
+  background-color: #72b01d;
+  border-color: #3f7d20;
+}
+.btn-primary::selection {
+  background-color: black;
+  border-color: black;
+}
+
+@media (max-width:1200px)
 {
 
-    padding-left: 2%;
-    padding-right: 20%;
-    font-size: 17px;
-    margin: 0;
-    text-align: left;
+    .introText{
+        padding-top: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 17px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .workExpTitle {
+        font-size: 25px;
+        padding-top: 1%;
+      }
+      
+      .workInfo {
+        text-align: left;
+      }
+
 }
 
-.transition1{
-    background-image: url('../images/transition1.jpg'); 
-}
-.transition2{
-    background-image: url('../images/transition2.jpg'); 
-}
-.carousel-control-next{
-    filter: invert(100%);
- }
-.carousel-control-prev {
-   filter: invert(100%);
+
+@media (max-width:595px)
+{
+    .introText{
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 17px;
+        margin: 0;
+        text-align: center;
+    }
 }
 
-.workExpTitle{
-    color: var(--greyAlt);
-    font-size: 25px;
-    padding-top: 1%;
+@media (max-width:777px)
+{
+    .navbar-brand {
+        margin-left: 5%;
+        margin-right: 15%;
+      }
 }
 
-.workInfo{
-    padding-left: 10%;
-    padding-right: 5%;
-    text-align: left;
+@media (max-width:486px)
+{
+    .navbar-brand {
+        margin-left: 0;
+        margin-right: 0;
+      }
 }
 
-.ProjectHeaderText{
-    color: var(--greyAlt);
-    font-size: 25px;
-    padding-top: 10%;
-}
-
-.projectDescription{
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: left;
-}
-
-.contactHeader{
-    color: var(--greyAlt);
-    font-size: 25px;
-    padding-top: 2%;
-}
-
-.contactRow{
-    background-color: #454955;
-}
-
-.contactText{
-    color: var(--textWhite);
-}
-
-.form-group{
-    padding-top: 1%;
-    padding-left: 35%;
-    padding-right: 35%;
-}
-
-.btn-primary{
-    margin-top: 3%;
-    width:10%;
-    background-color: #3F7D20;
-    border-color: #72B01D;
-}
-.btn-primary:hover{
-    background-color: #72B01D;
-    border-color: #3F7D20;
-}
-.btn-primary::selection{
-    background-color: black;
-    border-color: black;
-}
+/* 
+@media (min-width:993px)
+{
+    .grid-container-2{
+        height: 77vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        'header header header'
+        'jumbotron jumbotron jumbotron'
+        'jumbotron jumbotron jumbotron'
+        'card1 card2 card3'
+        'card1 card2 card3'
+        'section section section'
+        'section section section'
+        'footer footer footer';
+    }
+    .grid-container-2 .item5{
+        visibility:visible;
+    }
+} */

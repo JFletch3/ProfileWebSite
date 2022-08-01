@@ -13,7 +13,7 @@
   <body>
     <main>
       <div>
-        <nav class="navbar navbar-expand-lg text-center navbar-fixed-top">
+        <nav class="navbar navbar-expand text-center">
           <a class="navbar-brand" href="#">Joe<br />Fletcher</a>
           <button
             class="navbar-toggler"
@@ -28,7 +28,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#anchor-aboutMe">About</a>
               </li>
               <li class="nav-item">
@@ -61,11 +61,10 @@
           </div>
         </div>
         <div class="row text-center introTextRow">
-          <div class="col-3"></div>
-          <div class="col-3">
-            <img src="./images/joe2.jpg" alt="test" width="500" height="650" />
+          <div class="col-12 col-xl-6 d-none d-sm-block d-sm-none d-md-block">
+            <img class="joePic" src="./images/joe2.jpg" alt="test" width="500" height="650" />
           </div>
-          <div class="col-4">
+          <div class="col-12 col-xl-6 ">
             <p class="introText">
               I have worked in manufacturing environments for the last 18 years.
               I've held roles as CNC machine operators, technical quality
@@ -92,7 +91,6 @@
               company and have been doing this job for just over Three years.
             </p>
           </div>
-          <div class="col-2"></div>
         </div>
         <div class="row text-center parallax transition1 mb-5">
           <div class="col-12"></div>
@@ -104,8 +102,9 @@
           <div class="line"></div>
         </div>
         <div class="row text-center">
-          <div class="col-4">
+          <div class="col-12 col-xl-4">
             <img
+              class ="workHistoryIMG"
               src="./images/ttmlogo.png"
               alt="apexLogo"
               width="200"
@@ -119,7 +118,6 @@
               Technician, Laser drill Operator, and Engineering Tech where I
               spent the last 8 of my 12 years.
               <br />
-              <br />
               As an Engineer Technician I was responsible for root cause
               evaluation of nonconforming product, work with process engineering
               on process improvement projects, user critical thinking skills to
@@ -127,8 +125,9 @@
               scrapped.
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-xl-4">
             <img
+              class ="workHistoryIMG"
               src="./images/apexlogo.png"
               alt="apexLogo"
               width="200"
@@ -137,26 +136,18 @@
             <p class="workExpTitle">- Manufacturing Engineer 2015-2018</p>
             <p class="workDetails">Apex Industries</p>
             <p class="workInfo">
-              At Apex Industries I worked as one of three Manufacturing
-              Engineers. I was responsible for evaluating product that was in
-              question from the machine shop floor, quality departments, and
-              fabrication. I evaluated Engineering Change requests for blueprint
-              updates, interfaced with the customer on product related issues as
-              well as developed new software tools to better automate the
-              overall process.
-              <br />
-              <br />
-              At Apex is where I built my first large scale program using Python
-              and SQL to interface with the Microsoft SQL server. Here I
-              developed a mini ERP software that Engineers, Planning,
-              Manufacturing used to place product on hold for evaluation by the
-              Engineering team, review product documents such as blueprints and
-              specs, along with giving the operators the ability to see their
-              Work in Progress with real time updating.
+                At Apex is where I built my first large scale program using Python
+                and SQL to interface with the Microsoft SQL server. Here I
+                developed a mini ERP software that Engineers, Planning,
+                Manufacturing used to place product on hold for evaluation by the
+                Engineering team, review product documents such as blueprints and
+                specs, along with giving the operators the ability to see their
+                Work in Progress with real time updating.
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-xl-4">
             <img
+              class ="workHistoryIMG"
               src="./images/ttmlogo.png"
               alt="apexLogo"
               width="200"
@@ -172,14 +163,6 @@
               and specifications new projects might have. I support multiple
               cross platform interface programs as well as develop new reports
               and updates to existing programs from the large Oracle code base.
-              <br />
-              <br />
-              A significant part of my job as a Software Engineer is to bring
-              data in from Manufacturing facilities that TTM Technologies wants
-              to get on Oracle. I own and run the conversion code for multiple
-              modules in Oracle and it is critical the code base is maintained
-              and updated accordingly for each new facility.
-            </p>
           </div>
         </div>
         <div class="row text-center parallax transition2 mb-5">
@@ -192,7 +175,7 @@
           <div class="line"></div>
         </div>
         <div class="row text-center">
-          <div class="col-6">
+          <div class="col-12 col-xl-6">
             <img
               src="./images/andriod1.png"
               alt="project1"
@@ -211,7 +194,7 @@
               >Github</a
             >
           </div>
-          <div class="col-6">
+          <div class="col-12 col-xl-6">
             <img
               src="./images/andriod2.png"
               alt="project2"
@@ -243,7 +226,9 @@
                 />
               </div>
               <div class="form-group">
-                <label class="form-label contactText" for="email">Email address</label>
+                <label class="form-label contactText" for="email"
+                  >Email address</label
+                >
                 <input
                   type="email"
                   class="form-control"
@@ -252,15 +237,17 @@
                 />
               </div>
               <div class="form-group">
-              <label class="form-label contactText" for="message">Message</label>
+                <label class="form-label contactText" for="message"
+                  >Message</label
+                >
                 <input
                   type="text"
                   class="form-control"
                   id="message"
                   placeholder="Enter Message"
                 />
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
