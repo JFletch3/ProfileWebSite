@@ -4,17 +4,17 @@
 
 As part of the Intro to Web Development class at Portland State University, our final project is to build a personal profile website.
 
-#### Required:
+### Required Technologies:
 
 1. HTML
 2. CSS
 3. Javascript
 
-#### Optional:
+### Optional Technologies:
 
 1. Bootstrap
 
-#### Runing the code:
+### Runing the code:
 
 I kept file structure so its pretty easy to use. The page is a single .html page index.html.
 
@@ -24,13 +24,13 @@ The images are in the images directory.
 
 Clone repo to your local and open the index.html file.
 
-#### Outside Sources:
+### Outside Sources:
 
-##### Image sources:
+#### Image sources:
 
 1. Transition / Prallax images: https://pixabay.com/
 
-##### Design inspiration:
+#### Design inspiration:
 
 1. Color inspiration (green/grey/black): https://www.fabricsandpapers.com/grey-colour-schemes
 2. Parallax inspiration: https://www.mmm-fudge.com/
